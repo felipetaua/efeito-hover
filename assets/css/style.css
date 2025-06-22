@@ -28,7 +28,7 @@ body {
 }
 
 .card:hover {
-    height: 400px;
+    height: 450px;
 }
 
 .card .img-box {
@@ -49,4 +49,35 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+}
+
+.card:hover .content {
+    top: 150px;
+    height: 250px;
+    transition: .5s ease;
+}
+
+.card .read-more {
+    background: linear-gradient(90deg, #0868b2, #2563eb, #4f46e5);
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
 
